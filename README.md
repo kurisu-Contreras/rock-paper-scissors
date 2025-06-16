@@ -1,4 +1,3 @@
 # Rock Paper Scissors
-My first project of JavaScript 
-
-This is my pseudocode
+This it's my first project of JavaScript ;D
+![capibara programmer](https://pbs.twimg.com/media/FFXbKXdXsAYj9EF.jpg:large)
