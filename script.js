@@ -33,12 +33,44 @@ function getHumanChoice() {
     return humanChoice;
 }
 
-getHumanChoice();
+//getHumanChoice();
 
 function playRound(computer,human) {
     human = human.toLowerCase();
     console.log(`This it's the human choice ${human}`);
+
     
 }
-playRound(computerChoice,humanChoice);
+//playRound(computerChoice,humanChoice);
+
+
+//Cases where the computer wins
+if (computerChoice == "rock" && humanChoice == "scissors") {  
+
+    console.log(`You lose, ${computerChoice} beats ${humanChoice}`);
+    
+}else if (computerChoice == "paper" && humanChoice == "rock") {
+
+    console.log(`You lose, ${computerChoice} beats ${humanChoice}`);
+
+}else if (computerChoice == "scissors" && humanChoice == "paper") {
+
+    console.log(`You lose, ${computerChoice} beats ${humanChoice}`);
+
+    //Cases where the human wins
+
+}else if (computerChoice == "scissors" && humanChoice == "rock") {
+    console.log(`You WIN, ${humanChoice} beats ${computerChoice}`);
+
+}else if (computerChoice == "rock" && humanChoice == "paper") {
+    console.log(`You WIN, ${humanChoice} beats ${computerChoice}`);
+}
+else if (computerChoice == "paper" && humanChoice == "scissors") {
+    console.log(`You WIN, ${humanChoice} beats ${computerChoice}`);
+}else
+{
+    //Draw Case
+    console.log(`It's a DRAW!, ${humanChoice} it's never going to beat ${computerChoice}`);
+}
+
 
