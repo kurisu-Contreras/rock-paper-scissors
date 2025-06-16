@@ -32,8 +32,6 @@ function getHumanChoice() {
   return humanChoice;
 }
 
-
-
 function playRound(computer, human) {
   human = human.toLowerCase();
  
@@ -67,13 +65,32 @@ function playRound(computer, human) {
 }
 
 
-for (let index = 1; index < 6; index++) {
-    console.log(`Round ${index}
-    ----------------------------`)
+function playGame() {
+
+  let winnerMessage = "";
+
+  for (let index = 1; index < 6; index++) {
+    console.log(`Round ${index}`)
+    console.log("################");
     console.log("Computer Choice: "+ getComputerChoice());
     getHumanChoice();
     playRound(computerChoice,humanChoice);
-    
+  }
+
+  console.log("Human Score:"+humanScore);
+  console.log("Computer Score:"+computerScore);
+
+  if(humanScore>computerScore){
+
+    winnerMessage = "Congratulations fellow Human, You win this time!";
+
+  }else{
+
+    winnerMessage = "You lose, best luck the next time ;(";
+
+  }
+  return winnerMessage;
 }
-console.log("Human Score:"+humanScore);
-console.log("Computer Score:"+computerScore);
+
+console.log(playGame());
+
