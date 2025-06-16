@@ -27,7 +27,7 @@ function getComputerChoice() {
 
 function getHumanChoice() {
   humanChoice = prompt(
-    "Hey, Welcome to the amazing game of Rock, Paper and the so powerful Scissors\nWrite your choice here! \n PLEASE OPEN THE CONSOLE :D} "
+    "Hey, Welcome to the amazing game of Rock, Paper and the so powerful Scissors\nWrite your choice here! \n PLEASE OPEN THE CONSOLE :D "
   );
   return humanChoice;
 }
